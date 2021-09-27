@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function myFunction(){
+  
+      boxValue=Number(document.getElementById("g1").value)
+      console.log(typeof(boxValue), boxValue);
+      if (boxValue==1){
+        console.log("running!");
+        //window.location = "http://example.com/new_url";
+      } else {
+        console.log("walking!");
+        //window.location = "https:/www.google.com";
+      }
+    }
+  </script>
+<title>Example of Combobox</title>
+</head>
+<style>
+.combo{
+padding:10px;
+}
+</style>
+<h1>Front End Development languages</h1>
+<body>
+<select class="combo"  onchange="myFunction()"" name= "select_g1" id="g1">
+<option value="Select">Select....</option>
+<option value="1">HTML 5</option>
+<option value="1">CSS 3</option>
+<option value="1">Javascript/Ajax</option>
+<option value="1">Bootstrap</option>
+<option value="2">React JS</option>
+<option value="2">Vue JS</option>
+<option value="2">Angular 2</option>
+<option value="2">Angular 4</option>
+<option value="2">Angular 5</option>
+<option value="2">Angular 6</option>
+<option value="2">Angular 7</option>
+<option value="2">Angular 8</option>
+<option value="2">CSS framework</option>
+<option value="2">Responsive Web Design</option>
+<option value="2">DOM scripting</option>
+<option value="2">Saas, Less</option>
+<option value="2">HTML 5 API</option></select>
+</body>
+</html>
